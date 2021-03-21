@@ -1122,7 +1122,6 @@ img {
 .footer-info p,
 .footer-info a {
   font-family: "Open Sans", "Arial", sans-serif;
-  ;
   color: var(--basic-white);
   font-weight: 300;
   font-size: 15px;
@@ -1159,6 +1158,7 @@ img {
 
 .info-list a {
   color: var(--basic-white);
+  font-family: inherit;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
