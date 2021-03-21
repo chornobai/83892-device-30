@@ -15,7 +15,7 @@ let resetCurrentSlides = () =>{
 };
 
 controls.forEach((item,i) => {
-	item.addEventListener('click', ()=>{
+	item.addEventListener("click", ()=>{
 		resetCurrentSlides();
 		if(item.classList.contains("first-slide")){
 			slideOne.classList.add("current-promo");

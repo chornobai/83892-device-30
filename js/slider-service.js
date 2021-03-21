@@ -15,7 +15,7 @@ let resetCurrentSliders = () =>{
 }
 
 controlsBtn.forEach((item,i) => {
-	item.addEventListener('click', ()=>{
+	item.addEventListener("click", ()=>{
 		resetCurrentSliders();
 		if(item.classList.contains("control-delivery")){
 			slideFirst.classList.add("current-service-describe");

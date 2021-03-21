@@ -34,6 +34,9 @@ feedbackOn.addEventListener("click", function(evt){
 feedbackClose.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	feedback.classList.remove("feedback-show");
+	feedback.classList.remove("error-modal");
+	nameField.classList.remove("error");
+	emailField.classList.remove("error");
 	
 });
 
@@ -41,8 +44,12 @@ feedbackClose.addEventListener("click", function (evt) {
 
 feedbackForm.addEventListener("submit", function(evt){
 	if(!nameField.value || !emailField.value){
+
 		nameField.classList.add("error");
 		emailField.classList.add("error");
+		feedback.classList.remove("error-modal");
+		 feedback.offsetWidth = feedback.offsetWidth;
+		feedback.classList.add("error-modal");
 		evt.preventDefault();
 
 	}else{
@@ -58,6 +65,9 @@ window.addEventListener("keydown", function(evt){
 		if (feedback.classList.contains("feedback-show")){
 			evt.preventDefault();
 			feedback.classList.remove("feedback-show");
+			feedback.classList.remove("error-modal");
+			nameField.classList.remove("error");
+			emailField.classList.remove("error");
 		}
 	}
 })
