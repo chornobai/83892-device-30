@@ -1105,7 +1105,7 @@ img {
 
 .account-list-footer a {
   color: var(--gradient-transparent-white-60);
-  font-family: Open Sans, "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   ;
   font-weight: 300;
   font-size: 15px;
@@ -1121,7 +1121,7 @@ img {
 
 .footer-info p,
 .footer-info a {
-  font-family: Open Sans, "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   ;
   color: var(--basic-white);
   font-weight: 300;
